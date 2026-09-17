@@ -40,7 +40,6 @@ export function HeroVideo() {
       playsInline
       preload="auto"
       src="/video/herovideo.mp4"
-      fetchPriority="high"
     />
   );
 }
