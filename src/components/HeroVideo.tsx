@@ -33,15 +33,14 @@ export function HeroVideo() {
   return (
     <video
       ref={ref}
-      className="absolute inset-0 h-full w-full object-cover brightness-[.62] contrast-[1.05]"
+      className="absolute inset-0 h-full w-full bg-black object-cover brightness-[.62] contrast-[1.05]"
       autoPlay
       muted
       loop
       playsInline
       preload="auto"
-      poster="/images/utana.jpg"
-    >
-      <source src="/video/herovideo.mp4" type="video/mp4" />
-    </video>
+      src="/video/herovideo.mp4"
+      fetchPriority="high"
+    />
   );
 }

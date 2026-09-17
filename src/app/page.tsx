@@ -6,6 +6,13 @@ import { homeIntro } from "@/lib/site";
 export default function HomePage() {
   return (
     <>
+      <link
+        rel="preload"
+        as="video"
+        href="/video/herovideo.mp4"
+        type="video/mp4"
+        fetchPriority="high"
+      />
       <section className="relative h-[calc(100svh-76px)] overflow-hidden bg-black text-white">
         <HeroVideo />
         <div
